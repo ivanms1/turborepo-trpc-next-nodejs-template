@@ -1,8 +1,8 @@
-import { type NextAuthOptions } from "next-auth";
-import DiscordProvider from "next-auth/providers/discord";
+import { type NextAuthOptions } from 'next-auth';
+import DiscordProvider from 'next-auth/providers/discord';
 
-import { prisma } from "db";
-import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import { prisma } from 'db';
+import { PrismaAdapter } from '@next-auth/prisma-adapter';
 
 export const authOptions: NextAuthOptions = {
   // Configure one or more authentication providers
@@ -14,7 +14,7 @@ export const authOptions: NextAuthOptions = {
     }),
   ],
   callbacks: {
-    session({ session, user }) {
+    session({ session, user }: any) {
       if (session.user) {
         session.user.id = user.id;
       }

@@ -1,6 +1,6 @@
-import { Button } from "ui";
+import { Button } from 'ui';
 
-import { trpc } from "@/utils/trpc";
+import { trpc } from '@/utils/trpc';
 
 export default function Web() {
   const jobPostsQuery = trpc.jobPost.all.useQuery();

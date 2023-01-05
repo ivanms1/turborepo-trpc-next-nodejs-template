@@ -1,5 +1,5 @@
-import { router, publicProcedure } from "../trpc";
-import { z } from "zod";
+import { router, publicProcedure } from '../trpc';
+import { z } from 'zod';
 
 export const jobPostRouter = router({
   all: publicProcedure.query(({ ctx }) => {

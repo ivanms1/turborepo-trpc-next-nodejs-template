@@ -1,6 +1,6 @@
-import { router } from "../trpc";
-import { jobPostRouter } from "./post";
-import { authRouter } from "./auth";
+import { router } from '../trpc';
+import { jobPostRouter } from './post';
+import { authRouter } from './auth';
 
 export const appRouter = router({
   jobPost: jobPostRouter,

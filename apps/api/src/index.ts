@@ -1,22 +1,22 @@
-import express from "express";
-import cors from "cors";
-import * as trpcExpress from "@trpc/server/adapters/express";
+import express from 'express';
+import cors from 'cors';
+import * as trpcExpress from '@trpc/server/adapters/express';
 
-import { appRouter, createContext } from "trpc";
+import { appRouter, createContext } from 'trpc';
 
 const app = express();
 
 const PORT = process.env.PORT || 4000;
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: 'http://localhost:3000',
   credentials: true,
 };
 
 app.use(cors(corsOptions));
 
 app.use(
-  "/trpc",
+  '/trpc',
   trpcExpress.createExpressMiddleware({
     router: appRouter,
     createContext,
