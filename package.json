@@ -11,6 +11,8 @@
     "dev": "turbo run dev --parallel",
     "dev:web": "turbo run dev --filter=!admin",
     "dev:admin": "turbo run dev --filter=!web",
+    "db:generate": "turbo db:generate",
+    "db:push": "turbo db:push db:generate",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
