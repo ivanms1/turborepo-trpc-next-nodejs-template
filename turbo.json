@@ -11,5 +11,12 @@
     "dev": {
       "cache": false
     }
-  }
+  },
+  "globalEnv": [
+    "NODE_ENV",
+    "DISCORD_CLIENT_ID",
+    "DISCORD_CLIENT_SECRET",
+    "VERCEL_URL",
+    "NEXT_PUBLIC_SERVER_URL"
+  ]
 }

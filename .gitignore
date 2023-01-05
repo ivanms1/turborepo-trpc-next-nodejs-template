@@ -31,3 +31,11 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+dist
+
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
