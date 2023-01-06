@@ -16,7 +16,7 @@
     "auth": "*",
     "@trpc/client": "^10.5.0",
     "@trpc/server": "^10.5.0",
-    "superjson": "1.9.1",
+    "superjson": "1.12.1",
     "zod": "^3.20.0"
   },
   "devDependencies": {
