@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "dotenv-cli": "^6.0.0",
-    "prisma": "^4.8.0",
+    "prisma": "^4.11.0",
     "typescript": "^4.9.4"
   }
 }
